@@ -18,7 +18,10 @@
     <feature name="InAppBrowser">
         <param name="ios-package" value="CDVInAppBrowser" />
     </feature>
-    <name>Rogers</name>
+    <feature name="Geolocation">
+        <param name="ios-package" value="CDVLocation" />
+    </feature>
+    <name>Roger's</name>
     <description>
         Nuestra nueva app para pedir express !!
     </description>

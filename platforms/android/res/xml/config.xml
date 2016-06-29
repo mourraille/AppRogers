@@ -4,7 +4,10 @@
     <feature name="InAppBrowser">
         <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
     </feature>
-    <name>Rogers</name>
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
+    </feature>
+    <name>Roger's</name>
     <description>
         Nuestra nueva app para pedir express !!
     </description>

@@ -5,7 +5,8 @@ document.addEventListener('deviceready',function(e) {
       AUTH0_DOMAIN
   
     );
-    
+   
+   
     var userProfile;
 
  if ($('.lock').val() == '') { 

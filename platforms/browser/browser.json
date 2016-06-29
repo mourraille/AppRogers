@@ -9,6 +9,12 @@
     "installed_plugins": {
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.auth0.sample"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.auth0.sample"
+        },
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.auth0.sample"
         }
     },
     "dependent_plugins": {},
@@ -32,6 +38,8 @@
         }
     ],
     "plugin_metadata": {
-        "cordova-plugin-inappbrowser": "1.1.1"
+        "cordova-plugin-inappbrowser": "1.1.1",
+        "cordova-plugin-geolocation": "2.2.0",
+        "cordova-plugin-compat": "1.0.0"
     }
 }

@@ -1,7 +1,28 @@
 window.onload = function() {
 	
- 
+     var options = {
+      enableHighAccuracy: true,
+      maximumAge: 3600000
+   }
+	
+	
+   var watchID = navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
+
+   function onSuccess(position) {
+
+	var lat = position.coords.latitude;
+    var lon = position.coords.longitude;
+      localStorage.setItem('lat', lat);
+            localStorage.setItem('lon', lon);
+   };
+
+   function onError(error) {
+     
+   }
+   
  $("#greeting").append("Hola, " + localStorage.getItem('name')+" !");
+    
+
       
 /*
      
