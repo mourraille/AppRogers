@@ -7,10 +7,13 @@
         "files": {}
     },
     "installed_plugins": {
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.auth0.sample"
+        },
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.auth0.sample"
         },
-        "cordova-plugin-geolocation": {
+        "com.bez4pieci.cookies": {
             "PACKAGE_NAME": "com.auth0.sample"
         }
     },

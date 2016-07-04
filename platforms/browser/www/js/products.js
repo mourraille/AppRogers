@@ -2,11 +2,13 @@ window.onload = function() {
     $("document.body").hide();
  
   var total = 0;
+  var prods = "";
   
-  localStorage.setItem('total',total);
+  localStorage.setItem('total', total);
+  localStorage.setItem('products', prods);
  
   var req = $.ajax({
-    url: 'http://rogersapp.azurewebsites.net/Rogers_API.asmx/searchProductJSON?productname=',
+    url: 'http://approgers.azurewebsites.net/Rogers_API.asmx/searchProductJSON?productname=',
     dataType:'json',
     timeout: 10000,
     success: function(datos){
@@ -16,6 +18,10 @@ window.onload = function() {
       mensajeError(x, t, m);
     }
   });
+
+
+
+
 
  }	
 
@@ -78,9 +84,11 @@ function loadProducts(datos) {
     spanprice.innerHTML = "&#8353; "+this.PRICE;
     var buy = document.createElement("input");
     buy.setAttribute("type", "button");
-    buy.setAttribute("onclick", "addToList(this.PRODUCT_ID)");
+
+    buy.setAttribute("onClick", "javascript:window.location.href='process.html?id="+this.PRODUCT_ID+"'");
     buy.setAttribute("value", "Agregar!");
-    
+
+
     var clear = document.createElement("div");
     clear.setAttribute("class", "clear")
     
@@ -102,3 +110,9 @@ function loadProducts(datos) {
 });
 	
 }
+
+function addToList(id) {
+
+	
+}
+

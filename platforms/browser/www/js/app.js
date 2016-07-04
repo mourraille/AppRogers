@@ -11,13 +11,15 @@ document.addEventListener('deviceready',function(e) {
 
  if ($('.lock').val() == '') { 
       e.preventDefault();
-      lock.show(function(err, profile, token) {
+      lock.show(function(err, profile, token)  {
+	      connections: ['Username-Password-Authentication'];
 	      
         if (err) {
 
         } else {
 	        
-var WSurl= "http://rogersapp.azurewebsites.net/Rogers_API.asmx/addClientJSON?fullname="+profile.name+"&password="+"Social Login"+"&profilepictureurl="+profile.picture+"&email="+profile.email+"&address="+"To be defined @ checkout"
+var str = encodeURIComponent(profile.picture);      
+var WSurl= "http://approgers.azurewebsites.net/Rogers_API.asmx/addClientJSON?fullname="+profile.name+"&password=null&profilepic="+str+"&email="+profile.email+"&address=to be defined @ checkout"
  	
 
 	var req = $.ajax({
@@ -26,6 +28,8 @@ var WSurl= "http://rogersapp.azurewebsites.net/Rogers_API.asmx/addClientJSON?ful
 		success: function(datos) {
 		
 		  userProfile = profile;
+		  var productlist = "";
+		  localStorage.setItem('list', productlist);
           localStorage.setItem('email', profile.email);
           localStorage.setItem('name', profile.name);   
           localStorage.setItem('picture', profile.picture);     

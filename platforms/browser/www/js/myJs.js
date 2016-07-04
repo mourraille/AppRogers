@@ -34,3 +34,12 @@ window.onload = function() {
      
 };
 
+function logout() {
+	
+	localStorage.removeItem('id_token');
+userProfile = null;
+document.cookie.split(";").forEach(function(c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });
+window.location.href = "login.html";
+
+}
+

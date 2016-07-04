@@ -21,6 +21,9 @@
     <feature name="Geolocation">
         <param name="ios-package" value="CDVLocation" />
     </feature>
+    <feature name="Cookies">
+        <param name="ios-package" value="CDVCookies" />
+    </feature>
     <name>Roger's</name>
     <description>
         Nuestra nueva app para pedir express !!

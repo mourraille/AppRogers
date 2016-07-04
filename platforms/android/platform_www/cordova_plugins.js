@@ -19,6 +19,13 @@ module.exports = [
         "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
         "id": "cordova-plugin-geolocation.PositionError",
         "runs": true
+    },
+    {
+        "file": "plugins/com.bez4pieci.cookies/www/cookies.js",
+        "id": "com.bez4pieci.cookies.cookies",
+        "clobbers": [
+            "cookies"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -26,7 +33,8 @@ module.exports.metadata =
 {
     "cordova-plugin-inappbrowser": "1.1.1",
     "cordova-plugin-geolocation": "2.2.0",
-    "cordova-plugin-compat": "1.0.0"
+    "cordova-plugin-compat": "1.0.0",
+    "com.bez4pieci.cookies": "0.0.1"
 };
 // BOTTOM OF METADATA
 });

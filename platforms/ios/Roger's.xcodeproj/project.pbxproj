@@ -18,6 +18,7 @@
 		BF33DE1FBEC2402C822816EA /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1612935712564B1A865B3208 /* CDVInAppBrowser.m */; };
 		B078B5014C674A0A83F83EFD /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE435870F14152A61E431E /* CDVLocation.m */; };
 		39992B4C64C748C5BDE90BDF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218F876E9A35410CAC4731D3 /* CoreLocation.framework */; };
+		DD93AE5015474ED89696BB2F /* CDVCookies.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F69A5DFEB7F4D5D9F9B5A48 /* CDVCookies.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		7BEE435870F14152A61E431E /* CDVLocation.m */ = {isa = PBXFileReference; name = "CDVLocation.m"; path = "cordova-plugin-geolocation/CDVLocation.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		75C9463AFA0C4BD7830DADEE /* CDVLocation.h */ = {isa = PBXFileReference; name = "CDVLocation.h"; path = "cordova-plugin-geolocation/CDVLocation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		218F876E9A35410CAC4731D3 /* CoreLocation.framework */ = {isa = PBXFileReference; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		8F69A5DFEB7F4D5D9F9B5A48 /* CDVCookies.m */ = {isa = PBXFileReference; name = "CDVCookies.m"; path = "com.bez4pieci.cookies/CDVCookies.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		B5E32B7EAAF949DA86850939 /* CDVCookies.h */ = {isa = PBXFileReference; name = "CDVCookies.h"; path = "com.bez4pieci.cookies/CDVCookies.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +173,8 @@
 				DDFABAC42A72484C972FDA63 /* CDVInAppBrowser.h */,
 				7BEE435870F14152A61E431E /* CDVLocation.m */,
 				75C9463AFA0C4BD7830DADEE /* CDVLocation.h */,
+				8F69A5DFEB7F4D5D9F9B5A48 /* CDVCookies.m */,
+				B5E32B7EAAF949DA86850939 /* CDVCookies.h */,
 			);
 			name = Plugins;
 			path = "Roger's/Plugins";
@@ -286,6 +291,7 @@
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				BF33DE1FBEC2402C822816EA /* CDVInAppBrowser.m in Sources */,
 				B078B5014C674A0A83F83EFD /* CDVLocation.m in Sources */,
+				DD93AE5015474ED89696BB2F /* CDVCookies.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

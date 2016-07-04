@@ -15,6 +15,10 @@
                         {
                             "xml": "<feature name=\"Geolocation\"><param name=\"android-package\" value=\"org.apache.cordova.geolocation.Geolocation\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Cookies\"><param name=\"android-package\" value=\"com.bez4pieci.cookies.Cookies\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -44,6 +48,9 @@
         },
         "cordova-plugin-compat": {
             "PACKAGE_NAME": "com.auth0.sample"
+        },
+        "com.bez4pieci.cookies": {
+            "PACKAGE_NAME": "com.auth0.sample"
         }
     },
     "dependent_plugins": {},
@@ -67,11 +74,19 @@
             "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
             "id": "cordova-plugin-geolocation.PositionError",
             "runs": true
+        },
+        {
+            "file": "plugins/com.bez4pieci.cookies/www/cookies.js",
+            "id": "com.bez4pieci.cookies.cookies",
+            "clobbers": [
+                "cookies"
+            ]
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-inappbrowser": "1.1.1",
         "cordova-plugin-geolocation": "2.2.0",
-        "cordova-plugin-compat": "1.0.0"
+        "cordova-plugin-compat": "1.0.0",
+        "com.bez4pieci.cookies": "0.0.1"
     }
 }

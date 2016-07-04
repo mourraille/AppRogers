@@ -12,6 +12,9 @@
         },
         "cordova-plugin-geolocation": {
             "PACKAGE_NAME": "com.auth0.sample"
+        },
+        "com.bez4pieci.cookies": {
+            "PACKAGE_NAME": "com.auth0.sample"
         }
     },
     "dependent_plugins": {
