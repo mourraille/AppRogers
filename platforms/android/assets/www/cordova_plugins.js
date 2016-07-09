@@ -34,7 +34,8 @@ module.exports.metadata =
     "cordova-plugin-inappbrowser": "1.1.1",
     "cordova-plugin-geolocation": "2.2.0",
     "cordova-plugin-compat": "1.0.0",
-    "com.bez4pieci.cookies": "0.0.1"
+    "com.bez4pieci.cookies": "0.0.1",
+    "cordova-plugin-whitelist": "1.2.2"
 };
 // BOTTOM OF METADATA
 });

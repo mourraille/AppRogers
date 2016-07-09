@@ -23,7 +23,7 @@ window.onload = function() {
  $("#greeting").append("Hola, " + localStorage.getItem('name')+" !");
     
 
-      
+
 /*
      
  if (window.location.hash != null && window.location.hash != '') {
@@ -38,7 +38,7 @@ function logout() {
 	
 	localStorage.removeItem('id_token');
 userProfile = null;
-document.cookie.split(";").forEach(function(c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });
+
 window.location.href = "login.html";
 
 }

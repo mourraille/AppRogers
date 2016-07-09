@@ -15,6 +15,9 @@
         },
         "com.bez4pieci.cookies": {
             "PACKAGE_NAME": "com.auth0.sample"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.auth0.sample"
         }
     },
     "dependent_plugins": {

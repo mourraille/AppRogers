@@ -6,14 +6,24 @@ window.onload = function() {
    
 	var url = getUrlVars()["id"];
 	var prods = localStorage.getItem('list')
-    if (prods == '' || prods == null) {
-	prods="";
-}   
+	
+ 
    
     prods+=url+"_";
-   
-    localStorage.setItem('list',prods);
 
+    localStorage.setItem('list',prods);
+   
+   
+   
+   
+    
+    var price = parseInt(getUrlVars()["price"]);
+    var curtotal = parseInt(localStorage.getItem('total2'));
+      var alpha = price+curtotal
+
+    localStorage.setItem('total2',alpha);
+
+   
 }
 
 

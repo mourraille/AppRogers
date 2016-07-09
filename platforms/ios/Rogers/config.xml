@@ -24,7 +24,8 @@
     <feature name="Cookies">
         <param name="ios-package" value="CDVCookies" />
     </feature>
-    <name>Roger's</name>
+    <name>Rogers</name>
+    <allow-navigation href="*" />
     <description>
         Nuestra nueva app para pedir express !!
     </description>

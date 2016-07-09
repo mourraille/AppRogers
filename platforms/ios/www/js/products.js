@@ -19,10 +19,6 @@ window.onload = function() {
     }
   });
 
-
-
-
-
  }	
 
 
@@ -40,7 +36,10 @@ function mensajeError(x, t, m) {
 
 
 function loadProducts(datos) {
-	$.each(datos, function(){
+	$.each(datos, function() {		
+		if(this.isoutofstock) {
+
+		  
 	var containerdiv = document.createElement("div");
 
     containerdiv.setAttribute("class", "Popular-Restaurants-grid wow fadeInRight");
@@ -84,8 +83,10 @@ function loadProducts(datos) {
     spanprice.innerHTML = "&#8353; "+this.PRICE;
     var buy = document.createElement("input");
     buy.setAttribute("type", "button");
+    
+   
 
-    buy.setAttribute("onClick", "javascript:window.location.href='process.html?id="+this.PRODUCT_ID+"'");
+    buy.setAttribute("onClick", "javascript:window.location.href='process.html?id="+this.PRODUCT_ID+"&price="+this.PRICE+"'");
     buy.setAttribute("value", "Agregar!");
 
 
@@ -107,7 +108,12 @@ function loadProducts(datos) {
 
      document.getElementById("productos").appendChild(containerdiv)
 
-});
+  
+		  
+		  
+		   
+			}
+		});
 	
 }
 
